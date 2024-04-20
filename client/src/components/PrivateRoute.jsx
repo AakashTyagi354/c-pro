@@ -15,7 +15,7 @@ const PrivateRoute = () => {
         const token = localStorage.getItem("token");
         if (token) {
           const response = await axios.get(
-            "http://localhost:3000/api/auth/me",
+            "http://localhost:4000/api/auth/me",
             {
               headers: {
                 authorization: `${token}`,
